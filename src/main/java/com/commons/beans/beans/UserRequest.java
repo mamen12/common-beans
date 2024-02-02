@@ -6,6 +6,9 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 @JsonInclude(Include.NON_NULL)
 public class UserRequest extends BaseRequest{
+	
+	@JsonProperty(value = "id_user")
+	private String id;
 
 	@JsonProperty(value = "name")
 	private String name;
@@ -61,6 +64,15 @@ public class UserRequest extends BaseRequest{
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+	
 	
 	
 }

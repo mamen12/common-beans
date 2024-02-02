@@ -10,13 +10,14 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonInclude(Include.NON_NULL)
 public class WalletRequest extends BaseRequest{
 
-	@JsonProperty(value = "")
+	@JsonProperty(value = "id_wallet")
 	private String idWallet;
 	
 	@JsonProperty(value = "account_no")
 	private String accountNo;
 	
-	private BigDecimal ballance;
+	@JsonProperty(value = "wallet_balance")
+	private BigDecimal balance;
 
 	public String getIdWallet() {
 		return idWallet;
@@ -31,10 +32,10 @@ public class WalletRequest extends BaseRequest{
 		this.accountNo = accountNo;
 	}
 	public BigDecimal getBallance() {
-		return ballance;
+		return balance;
 	}
 	public void setBallance(BigDecimal ballance) {
-		this.ballance = ballance;
+		this.balance = ballance;
 	}
 	
 }

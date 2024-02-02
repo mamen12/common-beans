@@ -26,6 +26,7 @@ public class AppConstants {
 	
 	
 	public static final String STATUS_SAVED = "001";
+	public static final String STATUS_PENDING= "004";
 	public static final String STATUS_PROCESED= "005";
 	public static final String STATUS_COMPLETED= "011";
 	public static final String STATUS_FAILED= "099";

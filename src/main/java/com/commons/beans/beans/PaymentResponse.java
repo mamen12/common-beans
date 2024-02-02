@@ -1,19 +1,15 @@
 package com.commons.beans.beans;
 
-
 import java.math.BigDecimal;
 import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 @JsonInclude(Include.NON_NULL)
-public class PaymentRequest extends BaseRequest {
+public class PaymentResponse {
 
-	@JsonProperty(value ="id_user")
-	private String idUser;
-	
 	@JsonProperty(value = "id_payment")
 	private String idPayment;
 	
@@ -26,9 +22,14 @@ public class PaymentRequest extends BaseRequest {
 	@JsonProperty(value = "amount")
 	private BigDecimal amount;
 	
-	@JsonProperty(value= "tran_code")
-	private String tranCode;
+	@JsonProperty(value= "payment_desc")
+	private String paymentDesc;
 	
+	@JsonProperty(value = "name_user")
+	private String name;
+
+	@JsonProperty(value = "status")
+	private String statusTransaction;
 	
 	public String getIdPayment() {
 		return idPayment;
@@ -62,20 +63,29 @@ public class PaymentRequest extends BaseRequest {
 		this.amount = amount;
 	}
 
-	public String getTranCode() {
-		return tranCode;
+	public String getPaymentDesc() {
+		return paymentDesc;
 	}
 
-	public void setTranCode(String tranCode) {
-		this.tranCode = tranCode;
+	public void setPaymentDesc(String paymentDesc) {
+		this.paymentDesc = paymentDesc;
 	}
 
-	public String getIdUser() {
-		return idUser;
+	public String getName() {
+		return name;
 	}
 
-	public void setIdUser(String idUser) {
-		this.idUser = idUser;
+	public void setName(String name) {
+		this.name = name;
 	}
+
+	public String getStatusTransaction() {
+		return statusTransaction;
+	}
+
+	public void setStatusTransaction(String statusTransaction) {
+		this.statusTransaction = statusTransaction;
+	}
+	
 	
 }
