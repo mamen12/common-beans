@@ -22,5 +22,17 @@ public class AppConstants {
 	
 	public static final String STATUS_ORDER_SAVED = "001";
 	public static final String PRODUCT_NOT_AVAILABLE = "Number of products not available";
+	public static final String SYSTEM = "SYSTEM";
 	
-}
+	
+	public static final String STATUS_SAVED = "001";
+	public static final String STATUS_PROCESED= "005";
+	public static final String STATUS_COMPLETED= "011";
+	public static final String STATUS_FAILED= "099";
+	
+	public static final String INSUFFFICIENT_BALANCE = "Insuffficient Ballance Wallet";
+	public static final String BALANCE = "Sufficient Balance ";
+	
+//	public static final String REDUCE_BALLANCE_FAILED = "Reduce Ballance";
+//	public static final String REDUCE_BALLANCE_FAILED = "Reduce Ballance";
+}	
